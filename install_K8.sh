@@ -27,7 +27,7 @@ echo "#####################################"
 
 echo "####  Installing the Pure Storage SDK  ####"
 sudo apt install purestorage
-sudo apt install ansible
+sudo apt install ansible --assume-yes
 # Install the Pure Storage collection
 
 
