@@ -26,6 +26,7 @@ echo "####  Installing the Pure Storage SDK  ####"
 sudo apt install purestorage
 sudo apt install jmespath
 sudo apt install ansible
+pip3 install ansible --upgrade
 # Install the Pure Storage collection
 
 
