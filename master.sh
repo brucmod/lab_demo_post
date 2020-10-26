@@ -43,7 +43,7 @@ echo "#### Update helm repos and install PSO ####"
 helm repo add pure https://purestorage.github.io/helm-charts
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/
 helm repo update
-helm install pure-storage-driver pure/pure-csi --namespace default -f ~/kubernetes/pso_values.yaml
+helm install pure-storage-driver pure/pure-csi --namespace default -f ~/post_k8/kubernetes/pso_values.yaml
 
 
 #Install PSO EXPLORER
