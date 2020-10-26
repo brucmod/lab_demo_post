@@ -14,7 +14,7 @@ echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers
 #makesure all packages are updated
 sudo apt-get update
 sudo apt install software-properties-common
-sudo apt-add-repository ppa:ansible/ansible
+sudo apt-add-repository ppa:ansible/ansible -y
 sudo apt update
 #install PIP3
 sudo apt install python3-pip --assume-yes
