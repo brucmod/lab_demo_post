@@ -11,13 +11,8 @@ echo "#####################################"
 #remove password requirement for sudo
 echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers
 
-#makesure all packages are updated
-sudo apt-get update
-sudo apt install software-properties-common
-sudo apt-add-repository ppa:ansible/ansible -y
-sudo apt update
-#install PIP3
-sudo apt install python3-pip --assume-yes
+
+
 
 # Install necessary packages, only python2 installed
 
@@ -26,17 +21,14 @@ echo "#####################################"
 # Install SDK
 
 echo "####  Installing the Pure Storage SDK  ####"
-sudo apt install purestorage
-sudo apt install ansible --assume-yes
+pip3 install purestorage
+
 # Install the Pure Storage collection
 
 
 echo "#### Installing the Purestorage Ansible Collection  ####"
 
 ansible-galaxy collection install purestorage.flasharray
-
-
-
 
 
 # Typing "ansible-playbook" everytime is a hassle...
