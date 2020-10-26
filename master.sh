@@ -12,7 +12,8 @@ echo "#####################################"
 echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers
 
 
-
+echo "install Helm" 
+sudo snap install helm --classic
 
 # Install necessary packages, only python2 installed
 
