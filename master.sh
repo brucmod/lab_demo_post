@@ -41,7 +41,7 @@ echo "alias P='cd ~/newstack_demo/ansible_playbooks'" >> ~/.bashrc
 #Install PSO
 echo "#### Update helm repos and install PSO ####"
 helm repo add pure https://purestorage.github.io/helm-charts
-helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+helm repo add stable helm repo add stable https://charts.helm.sh/stable
 helm repo update
 helm install pure-storage-driver pure/pure-csi --namespace default -f ~/post_k8/kubernetes/pso_values.yaml
 
